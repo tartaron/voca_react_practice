@@ -41,7 +41,7 @@ export default function CreateWord() {
         <form onSubmit={onSubmit}>
             <div className={"input_area"}>
                 <label>Eng</label>
-                <input type={"text"} placeholder={"English word plz"} ref={engRef}/>
+                <input type={"text"} placeholder={"English plz"} ref={engRef}/>
             </div>
             <div className={"input_area"}>
                 <label>Kor</label>
