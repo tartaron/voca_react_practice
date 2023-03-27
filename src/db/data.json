@@ -78,6 +78,13 @@
       "kor": "ㅂㅈㄷㄱㅂㅈㄱ",
       "isDone": false,
       "id": 15
+    },
+    {
+      "day": "1",
+      "eng": "addddddd",
+      "kor": "한그ㅡㅡㅡㅡㅡㅡㅡㄹ",
+      "isDone": true,
+      "id": 16
     }
   ]
 }

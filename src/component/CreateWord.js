@@ -5,7 +5,7 @@ import {useNavigate} from "react-router-dom";
 export default function CreateWord() {
     const days = useFetch(`http://localhost:3001/days`);
     const navigate = useNavigate();
-    const [isLoaded, setisLoaded] = useState(false);
+    const [isLoaded, setIsLoaded] = useState(false);
 
     const korRef = useRef(null);
     const engRef = useRef(null);
@@ -13,6 +13,28 @@ export default function CreateWord() {
 
     function onSubmit(event) {
         event.preventDefault();
+
+        if (!isLoaded) {
+            setIsLoaded(true);
+            fetch(`http://localhost:3001/words`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    day: dayRef.current.value,
+                    eng: engRef.current.value,
+                    kor: korRef.current.value,
+                    isDone: false,
+                })
+            }).then((response) => {
+                if (response.ok) {
+                    alert("Word added!");
+                    navigate("/");
+                    setIsLoaded(false);
+                }
+            })
+        }
     }
 
     return (
@@ -37,7 +59,7 @@ export default function CreateWord() {
             </div>
             <div>
                 <button>
-                    단어생성
+                    { isLoaded ? "Saving...!" : "단어생성"}
                 </button>
             </div>
         </form>
