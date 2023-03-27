@@ -1,0 +1,83 @@
+{
+  "days": [
+    {
+      "id": 1,
+      "day": 1
+    },
+    {
+      "id": 2,
+      "day": 2
+    },
+    {
+      "id": 3,
+      "day": 3
+    },
+    {
+      "day": 4,
+      "id": 4
+    },
+    {
+      "day": 5,
+      "id": 5
+    },
+    {
+      "day": 6,
+      "id": 6
+    },
+    {
+      "day": 7,
+      "id": 7
+    }
+  ],
+  "words": [
+    {
+      "id": 1,
+      "day": 1,
+      "eng": "book",
+      "kor": "책",
+      "isDone": false
+    },
+    {
+      "day": "2",
+      "eng": "mouse",
+      "kor": "쥐",
+      "isDone": false,
+      "id": 9
+    },
+    {
+      "day": "4",
+      "eng": "monkey",
+      "kor": "원숭이",
+      "isDone": true,
+      "id": 10
+    },
+    {
+      "day": "4",
+      "eng": "apple",
+      "kor": "사과",
+      "isDone": true,
+      "id": 11
+    },
+    {
+      "day": "1",
+      "eng": "newWord",
+      "kor": "새단어",
+      "isDone": false,
+      "id": 13
+    },
+    {
+      "day": "3",
+      "eng": "computor",
+      "kor": "컴퓨터",
+      "isDone": false,
+      "id": 14
+    },
+    {
+      "day": "5",
+      "eng": "asdf",
+      "kor": "ㅂㅈㄷㄱㅂㅈㄱ",
+      "isDone": false,
+      "id": 15
+    }
+  ]
+}
